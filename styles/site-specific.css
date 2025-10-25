@@ -1,0 +1,5 @@
+/* サイト固有のダークモードカスタマイズ */
+
+.custom-dark-mode[data-site="webclass.tcu.ac.jp"] .header {
+  background-color: #272727 !important;
+}

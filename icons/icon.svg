@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="moonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="128" height="128" rx="20" ry="20" fill="url(#moonGradient)"/>
+  
+  <!-- 月のアイコン -->
+  <g transform="translate(64, 64)">
+    <!-- 月の本体 -->
+    <circle cx="0" cy="0" r="35" fill="white" opacity="0.95"/>
+    <!-- 三日月の影 -->
+    <circle cx="12" cy="-8" r="32" fill="url(#moonGradient)" opacity="0.9"/>
+    
+    <!-- 星 -->
+    <g fill="white">
+      <circle cx="-25" cy="-30" r="2"/>
+      <circle cx="-35" cy="-15" r="1.5"/>
+      <circle cx="-30" cy="25" r="2"/>
+      <circle cx="30" cy="-25" r="1.5"/>
+      <circle cx="35" cy="20" r="2"/>
+    </g>
+  </g>
+</svg>

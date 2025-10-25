@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ダークモード設定</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <h1>ダークモード設定</h1>
+    
+    <div class="system-setting">
+      <label class="toggle-switch">
+        <input type="checkbox" id="followSystem" checked>
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">システム設定に従う</span>
+      <div class="system-status" id="systemStatus"></div>
+    </div>
+    
+    <div class="toggle-container">
+      <label class="toggle-switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider"></span>
+      </label>
+      <span class="toggle-label">このサイトでダークモードを有効化</span>
+      <div class="override-setting">
+        <label>
+          <input type="checkbox" id="overrideSystem">
+          システム設定を上書き
+        </label>
+      </div>
+    </div>
+    
+    <div class="site-info">
+      <p id="currentSite"></p>
+    </div>
+    
+    <div class="settings-section">
+      <h3>詳細設定</h3>
+      
+      <div class="setting-item">
+        <label>
+          <input type="checkbox" id="invertImages">
+          画像を反転しない
+        </label>
+      </div>
+      
+      <div class="setting-item">
+        <label>
+          明度調整:
+          <input type="range" id="brightness" min="50" max="100" value="85">
+          <span id="brightnessValue">85%</span>
+        </label>
+      </div>
+      
+      <div class="setting-item">
+        <label>
+          コントラスト:
+          <input type="range" id="contrast" min="80" max="120" value="100">
+          <span id="contrastValue">100%</span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="site-list">
+      <h3>サイト別設定</h3>
+      <div id="sitesList"></div>
+      <button id="clearAll">すべての設定をクリア</button>
+    </div>
+    
+    <div class="shortcuts">
+      <p class="shortcut-info">
+        ショートカット: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd>
+      </p>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
